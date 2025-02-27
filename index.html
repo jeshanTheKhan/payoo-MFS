@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pay</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#1E1E1E] ">
+    <section class="bg-[#F4F5F7] py-48 max-w-md min-h-screen mx-auto">
+        <header>
+            <nav class="flex justify-center items-center">
+                <div class="mt-10 relative flex justify-center items-center w-9/12 mb-10">
+                    <img class="w-50 absolute" src="assets/bg.png" alt="" srcset="">
+                    <img class="w-20 mt-[-130px]" src="assets/Group.png" alt="" srcset="">
+        
+                </div>
+            </nav>
+            <!-- Login Form -->
+          
+        </header>
+        <div class="mt-[-50px]">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+              
+              <div class="card w-full max-w-sm shrink-0 shadow-2xl">
+                <form class="card-body">
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">Mobile Number</span>
+                    </label>
+                    <input type="text" id="account-number" placeholder="Enter Your Number" maxlength="11" 
+                    pattern="[0-9]{11}"  class="input input-bordered rounded-full bg-white pl-5" required />
+                  </div>
+                  <div class="form-control">
+                    <label class="label">
+                      <span class="label-text">4 Digit PIN</span>
+                    </label>
+                    <input type="text" id="pin-number" maxlength="4" 
+                    pattern="[0-9]{4}"  placeholder="Enter 4 Digit Pin" class="input rounded-full bg-white pl-5" required />
+                  </div>
+                  <div class="form-control mt-6">
+                    <button id="login-btn" class="btn btn-primary rounded-full font-semibold text-white text-xl">Login</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        
+    </section>
+</body>
+
+<script src="js/login.js"></script>
+</html>
