@@ -6,8 +6,12 @@
     <title>Pay</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style/style.css">
 </head>
-<body class="bg-[#1E1E1E] ">
+<body class="bg-[#F4F5F7] outfit">
   <section class="bg-[#F4F5F7] max-w-md min-h-screen mx-auto">
     <header class="flex justify-between px-6 pt-4">
         <p class="font-semibold text-black">9:41</p>
@@ -21,7 +25,7 @@
         <div class="flex gap-2">
             <img src="../assets/Group.png" alt="" class="w-12 h-auto" srcset="">
             <div>
-                <p>$<span id="main-balance">4500</span></p>
+                <p class="font-extrabold text-black text-xl">$<span id="main-balance">4500</span></p>
                 <p>Available Balance</p>
             </div>
         </div>
@@ -37,9 +41,9 @@
         </div>
     </nav>
     <section class="px-6 mt-5">
-        <h1>🔥 Welcome to Payooo!</h1>
+        <h1 class="font-bold text-2xl text-black">🔥 Welcome to Payooo!</h1>
         <p class="mt-3 mb-4">Enjoy easy and convenient financial services with us. Cashout charge is low and </p>
-        <div class="grid grid-cols-3 gap-4" >
+        <div class="grid grid-cols-3 gap-4 text-black" >
             <div class="border rounded-lg w-[123px] h-[90px] flex flex-col items-center justify-center" id="add-money-box">
               <img src="../assets/wallet1.png" class="w-9" alt="Wallet Image">
               <h1 class="mt-2">Add Money</h1>
@@ -69,17 +73,17 @@
           
           
       </section>
-      <section id="default" class="bg-gray-200 h-screen">
+      <section id="default" class="bg-gray-200 h-screen rounded-lg">
         <div class="mt-5 px-6">
           <div class="flex justify-between pt-5">
-            <h1>Latest Payment</h1>
+            <h1 class="font-semibold text-black">Latest Payment</h1>
             <p>View all</p>
           </div>
-          <div class="grid gap-3 mt-5">
+          <div class="grid gap-3 mt-5 text-black">
             <div class="border bg-white rounded-lg h-[85px] flex">
               <img src="../assets/wallet1.png" class="w-8 h-8 mt-5 ml-3" alt="Wallet Image">
               <div class="flex">
-                <div class="ml-5">
+                <div class="ml-5 ">
                   <h1 class="mt-2">Electric Bill</h1>
                   <p>Today 01:44 AM</p>
                 </div>
@@ -126,25 +130,25 @@
             <div class="hero-content flex-col lg:flex-row-reverse">
              
               <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
-                <div class="card-body">
-                    <legend>Select Bank</legend>
-                    <select class="select bg-white">
+                <div class="card-body ">
+                    <legend class="text-black">Select Bank</legend>
+                    <select class="select bg-white w-full rounded-3xl">
                         <option disabled selected>Select bank</option>
                         <option value="Bkash">Bkash</option>
                         <option value="Nagad">nagad</option>
                         <option value="dbbl">DBBL</option>
                       </select>
                       <fieldset class="fieldset">
-                        <label class="fieldset-label">Acount number</label>
-                        <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white" placeholder="type your  number" required/>
+                        <label class="fieldset-label text-black">Bank Acount number</label>
+                        <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter 11 digit account number" required/>
                         <br>
-                        <label class="fieldset-label">Amount </label>
+                        <label class="fieldset-label text-black">Amount to Add </label>
                         <br>
-                        <input id="amount" type="text" maxlength="11" class="input bg-white" placeholder="type your  Amount" required/>
+                        <input id="amount" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Add Amount to withdraw" required/>
                         <br>
-                        <label class="fieldset-label">PIN</label>
+                        <label class="fieldset-label text-black">Pin Number</label>
                         <br>
-                        <input id="pin"  type="text" class="input bg-white" placeholder="type your PIN"  required/>
+                        <input id="pin"  type="text" class="input bg-white w-full rounded-3xl" placeholder="Enter 4 digit pin number"  required/>
                         <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
                         <button id="add-money" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Add money</button>
                       </fieldset>
@@ -160,26 +164,20 @@
            
             <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
               <div class="card-body">
-                  <!-- <legend>Select Bank</legend>
-                  <select class="select bg-white">
-                      <option disabled selected>Select bank</option>
-                      <option value="Bkash">Bkash</option>
-                      <option value="Nagad">nagad</option>
-                      <option value="dbbl">DBBL</option>
-                    </select> -->
+                 
                     <fieldset class="fieldset">
-                      <label class="fieldset-label">Agent number</label>
-                      <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white" placeholder="type your  number" required/>
+                      <label class="fieldset-label text-black">Agent Number</label>
+                      <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter 11 digit number" required/>
                       <br>
-                      <label class="fieldset-label">Amount </label>
+                      <label class="fieldset-label text-black">Amount </label>
                       <br>
-                      <input id="cashout-amount" type="text" maxlength="11" class="input bg-white" placeholder="type your  Amount" required/>
+                      <input id="cashout-amount" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter amount to withdraw" required/>
                       <br>
-                      <label class="fieldset-label">PIN</label>
+                      <label class="fieldset-label text-black">Pin Number</label>
                       <br>
-                      <input id="chashout-pin"  type="text" class="input bg-white" placeholder="type your PIN"  required/>
+                      <input id="chashout-pin"  type="text" class="input bg-white w-full rounded-3xl" placeholder="Enter 4 digit pin number"  required/>
                       <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
-                      <button id="cashout-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Add money</button>
+                      <button id="cashout-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Withdraw</button>
                     </fieldset>
               </div>
             </div>
@@ -193,26 +191,20 @@
          
           <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
             <div class="card-body">
-                <!-- <legend>Select Bank</legend>
-                <select class="select bg-white">
-                    <option disabled selected>Select bank</option>
-                    <option value="Bkash">Bkash</option>
-                    <option value="Nagad">nagad</option>
-                    <option value="dbbl">DBBL</option>
-                  </select> -->
+            
                   <fieldset class="fieldset">
-                    <label class="fieldset-label">Agent number</label>
-                    <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white" placeholder="type your  number" required/>
+                    <label class="fieldset-label text-black">User Account Number</label>
+                    <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter 11 digit number" required/>
                     <br>
-                    <label class="fieldset-label">Amount </label>
+                    <label class="fieldset-label text-black">Amount </label>
                     <br>
-                    <input id="transfer-amount" type="text" maxlength="11" class="input bg-white" placeholder="type your  Amount" required/>
+                    <input id="transfer-amount" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter amount to transfer" required/>
                     <br>
-                    <label class="fieldset-label">PIN</label>
+                    <label class="fieldset-label text-black">Pin Number</label>
                     <br>
-                    <input id="chash-pin"  type="text" class="input bg-white" placeholder="type your PIN"  required/>
+                    <input id="chash-pin"  type="text" class="input bg-white w-full rounded-3xl" placeholder="Enter 4 digit pin number"  required/>
                     <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
-                    <button id="cash-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Add money</button>
+                    <button id="cash-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Send Now</button>
                   </fieldset>
             </div>
           </div>
@@ -227,10 +219,10 @@
         <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
           <div class="card-body">
                 <fieldset class="fieldset">
-                  <label class="fieldset-label">Enter Bonus Coupon</label>
-                  <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white" placeholder="type your  number" required/>
+                  <label class="fieldset-label text-black">Enter Bonus Coupon</label>
+                  <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter your coupon" required/>
                 
-                  <button id="cash-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Add money</button>
+                  <button id="cash-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Get Bonus</button>
                 </fieldset>
           </div>
         </div>
@@ -245,23 +237,23 @@
         <div class="card  w-full max-w-sm shrink-0 shadow-2xl">
           <div class="card-body">
               <legend>Select Bank</legend>
-              <select class="select bg-white">
+              <select class="select bg-white w-full rounded-3xl text-black">
                   <option disabled selected>Select To Pay</option>
                   <option value="Bkash">Bkash</option>
                   <option value="Nagad">nagad</option>
                   <option value="dbbl">DBBL</option>
                 </select>
                 <fieldset class="fieldset">
-                  <label class="fieldset-label">Bill Acount number</label>
-                  <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white" placeholder="type your  number" required/>
+                  <label class="fieldset-label text-black">Bill Acount number</label>
+                  <input id="Acount-nunber" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Enter account number" required/>
                   <br>
-                  <label class="fieldset-label">Amount to Pay</label>
+                  <label class="fieldset-label text-black">Amount to Pay</label>
                   <br>
-                  <input id="pay-amount" type="text" maxlength="11" class="input bg-white" placeholder="type your  Amount" required/>
+                  <input id="pay-amount" type="text" maxlength="11" class="input bg-white w-full rounded-3xl" placeholder="Add Amount to pay" required/>
                   <br>
-                  <label class="fieldset-label">PIN</label>
+                  <label class="fieldset-label text-black">PIN Number</label>
                   <br>
-                  <input id="pay-pin"  type="text" class="input bg-white" placeholder="type your PIN"  required/>
+                  <input id="pay-pin"  type="text" class="input bg-white w-full rounded-3xl" placeholder="Enter 4 digit pin number"  required/>
                   <!-- <div><a class="link link-hover">Forgot password?</a></div> -->
                   <button id="pay-btn" type="submit" class="btn border-none text-white text-xl py-3 h-auto bg-[#0874F2] w-[300px] rounded-3xl mt-4 ml-3">Pay Now</button>
                 </fieldset>
@@ -270,18 +262,18 @@
       </div>
     </div>
 </section>
-<section id="transaction" class="bg-gray-200 h-screen">
+<section id="transaction" class="bg-gray-200 h-screen rounded-lg">
   <div class="mt-5 px-6">
     <div class="flex justify-between pt-5">
-      <h1>Transaction History</h1>
+      <h1 class="text-black font-bold ">Transaction History</h1>
       <p>View all</p>
     </div>
-    <div class="grid gap-3 mt-5">
+    <div class="grid gap-3 mt-5 text-black">
       <div class="border bg-white rounded-lg h-[85px] flex">
         <img src="../assets/wallet1.png" class="w-8 h-8 mt-5 ml-3" alt="Wallet Image">
         <div class="flex">
           <div class="ml-5">
-            <h1 class="mt-2">Electric Bill</h1>
+            <h1 class="mt-2 text-black">Electric Bill</h1>
             <p>Today 01:44 AM</p>
           </div>
           <img src="../assets/imas-removebg-preview.png" class="w-12 h-12 mt-4 ml-[150px]" alt="" srcset="">

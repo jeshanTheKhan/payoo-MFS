@@ -6,8 +6,12 @@
     <title>Pay</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
 </head>
-<body class="bg-[#1E1E1E] ">
+<body class="bg-[#F4F5F7] outfit">
     <section class="bg-[#F4F5F7] py-48 max-w-md min-h-screen mx-auto">
         <header>
             <nav class="flex justify-center items-center">
@@ -27,14 +31,14 @@
                 <form class="card-body">
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text">Mobile Number</span>
+                      <span class="label-text text-black">Mobile Number</span>
                     </label>
                     <input type="text" id="account-number" placeholder="Enter Your Number" maxlength="11" 
                     pattern="[0-9]{11}"  class="input input-bordered rounded-full bg-white pl-5" required />
                   </div>
                   <div class="form-control">
                     <label class="label">
-                      <span class="label-text">4 Digit PIN</span>
+                      <span class="label-text text-black">4 Digit PIN</span>
                     </label>
                     <input type="text" id="pin-number" maxlength="4" 
                     pattern="[0-9]{4}"  placeholder="Enter 4 Digit Pin" class="input rounded-full bg-white pl-5" required />
